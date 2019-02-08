@@ -1,4 +1,4 @@
-package com.wdharmana.englishpremierleague.service.remote
+package com.wdharmana.englishpremierleague.service.repository
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
@@ -6,6 +6,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import com.wdharmana.englishpremierleague.MainApp
 import com.wdharmana.englishpremierleague.model.Team
+import com.wdharmana.englishpremierleague.service.remote.ApiService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 

@@ -4,7 +4,7 @@ import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import com.wdharmana.englishpremierleague.model.Team
-import com.wdharmana.englishpremierleague.service.remote.TeamRepository
+import com.wdharmana.englishpremierleague.service.repository.TeamRepository
 
 class TeamViewModel(application: Application) : AndroidViewModel(application) {
 

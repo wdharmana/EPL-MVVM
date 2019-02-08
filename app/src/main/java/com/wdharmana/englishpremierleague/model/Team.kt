@@ -1,156 +1,162 @@
 package com.wdharmana.englishpremierleague.model
 
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
+import android.support.annotation.NonNull
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "team")
 data class Team(
 
 	@SerializedName("intStadiumCapacity")
-	val intStadiumCapacity: String? = null,
+	var intStadiumCapacity: String? = "",
 
 	@SerializedName("strTeamShort")
-	val strTeamShort: String? = null,
+	var strTeamShort: String? = "",
 
 	@SerializedName("strSport")
-	val strSport: String? = null,
+	var strSport: String? = "",
 
 	@SerializedName("strDescriptionCN")
-	val strDescriptionCN: String? = null,
+	var strDescriptionCN: String? = "",
 
 	@SerializedName("strTeamJersey")
-	val strTeamJersey: String? = null,
+	var strTeamJersey: String? = "",
 
 	@SerializedName("strTeamFanart2")
-	val strTeamFanart2: String? = null,
+	var strTeamFanart2: String? = "",
 
 	@SerializedName("strTeamFanart3")
-	val strTeamFanart3: String? = null,
+	var strTeamFanart3: String? = "",
 
 	@SerializedName("strTeamFanart4")
-	val strTeamFanart4: String? = null,
+	var strTeamFanart4: String? = "",
 
 	@SerializedName("strStadiumDescription")
-	val strStadiumDescription: String? = null,
+	var strStadiumDescription: String? = "",
 
 	@SerializedName("strTeamFanart1")
-	val strTeamFanart1: String? = null,
+	var strTeamFanart1: String? = "",
 
 	@SerializedName("intLoved")
-	val intLoved: String? = null,
+	var intLoved: String? = "",
 
 	@SerializedName("idLeague")
-	val idLeague: String? = null,
+	var idLeague: String? = "",
 
 	@SerializedName("idSoccerXML")
-	val idSoccerXML: String? = null,
+	var idSoccerXML: String? = "",
 
 	@SerializedName("strTeamLogo")
-	val strTeamLogo: String? = null,
+	var strTeamLogo: String? = "",
 
 	@SerializedName("strDescriptionSE")
-	val strDescriptionSE: String? = null,
+	var strDescriptionSE: String? = "",
 
 	@SerializedName("strDescriptionJP")
-	val strDescriptionJP: String? = null,
+	var strDescriptionJP: String? = "",
 
 	@SerializedName("strDescriptionFR")
-	val strDescriptionFR: String? = null,
+	var strDescriptionFR: String? = "",
 
 	@SerializedName("strStadiumLocation")
-	val strStadiumLocation: String? = null,
+	var strStadiumLocation: String? = "",
 
 	@SerializedName("strDescriptionNL")
-	val strDescriptionNL: String? = null,
+	var strDescriptionNL: String? = "",
 
 	@SerializedName("strCountry")
-	val strCountry: String? = null,
+	var strCountry: String? = "",
 
 	@SerializedName("strRSS")
-	val strRSS: String? = null,
+	var strRSS: String? = "",
 
 	@SerializedName("strDescriptionRU")
-	val strDescriptionRU: String? = null,
+	var strDescriptionRU: String? = "",
 
 	@SerializedName("strTeamBanner")
-	val strTeamBanner: String? = null,
+	var strTeamBanner: String? = "",
 
 	@SerializedName("strDescriptionNO")
-	val strDescriptionNO: String? = null,
+	var strDescriptionNO: String? = "",
 
 	@SerializedName("strStadiumThumb")
-	val strStadiumThumb: String? = null,
+	var strStadiumThumb: String? = "",
 
 	@SerializedName("strDescriptionES")
-	val strDescriptionES: String? = null,
+	var strDescriptionES: String? = "",
 
 	@SerializedName("intFormedYear")
-	val intFormedYear: String? = null,
+	var intFormedYear: String? = "",
 
 	@SerializedName("strInstagram")
-	val strInstagram: String? = null,
+	var strInstagram: String? = "",
 
 	@SerializedName("strDescriptionIT")
-	val strDescriptionIT: String? = null,
+	var strDescriptionIT: String? = "",
 
+	@PrimaryKey
+	@NonNull
 	@SerializedName("idTeam")
-	val idTeam: String? = null,
+	var idTeam: String = "",
 
 	@SerializedName("strDescriptionEN")
-	val strDescriptionEN: String? = null,
+	var strDescriptionEN: String? = "",
 
 	@SerializedName("strWebsite")
-	val strWebsite: String? = null,
+	var strWebsite: String? = "",
 
 	@SerializedName("strYoutube")
-	val strYoutube: String? = null,
+	var strYoutube: String? = "",
 
 	@SerializedName("strDescriptionIL")
-	val strDescriptionIL: String? = null,
+	var strDescriptionIL: String? = "",
 
 	@SerializedName("strLocked")
-	val strLocked: String? = null,
+	var strLocked: String? = "",
 
 	@SerializedName("strAlternate")
-	val strAlternate: String? = null,
+	var strAlternate: String? = "",
 
 	@SerializedName("strTeam")
-	val strTeam: String? = null,
+	var strTeam: String? = "",
 
 	@SerializedName("strTwitter")
-	val strTwitter: String? = null,
+	var strTwitter: String? = "",
 
 	@SerializedName("strDescriptionHU")
-	val strDescriptionHU: String? = null,
+	var strDescriptionHU: String? = "",
 
 	@SerializedName("strGender")
-	val strGender: String? = null,
+	var strGender: String? = "",
 
 	@SerializedName("strDivision")
-	val strDivision: String? = null,
+	var strDivision: String? = "",
 
 	@SerializedName("strStadium")
-	val strStadium: String? = null,
+	var strStadium: String? = "",
 
 	@SerializedName("strFacebook")
-	val strFacebook: String? = null,
+	var strFacebook: String? = "",
 
 	@SerializedName("strTeamBadge")
-	val strTeamBadge: String? = null,
+	var strTeamBadge: String? = "",
 
 	@SerializedName("strDescriptionPT")
-	val strDescriptionPT: String? = null,
+	var strDescriptionPT: String? = "",
 
 	@SerializedName("strDescriptionDE")
-	val strDescriptionDE: String? = null,
+	var strDescriptionDE: String? = "",
 
 	@SerializedName("strLeague")
-	val strLeague: String? = null,
+	var strLeague: String? = "",
 
 	@SerializedName("strManager")
-	val strManager: String? = null,
+	var strManager: String? = "",
 
 	@SerializedName("strKeywords")
-	val strKeywords: String? = null,
+	var strKeywords: String? = "",
 
 	@SerializedName("strDescriptionPL")
-	val strDescriptionPL: String? = null
+	var strDescriptionPL: String? = ""
 )

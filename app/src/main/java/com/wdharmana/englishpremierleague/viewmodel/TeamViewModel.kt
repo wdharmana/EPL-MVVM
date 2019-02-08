@@ -8,7 +8,7 @@ import com.wdharmana.englishpremierleague.service.remote.TeamRepository
 
 class TeamViewModel(application: Application) : AndroidViewModel(application) {
 
-    val listObservable = TeamRepository.getInstance().getTeamList()
+    val listObservable = TeamRepository.getInstance().getTeamList(application.baseContext)
 
     fun getTeamListObservable(): LiveData<List<Team>> {
         return listObservable
